@@ -20,4 +20,6 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./example'));
 });
 
+// Default gulp task
+// Build the CSS when we run "gulp"
 gulp.task('default', ['styles']);
