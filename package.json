@@ -1,0 +1,32 @@
+{
+  "name": "seed-sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-sample-project.git"
+  },
+  "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-sample-project/issues"
+  },
+  "homepage": "https://github.com/helpscout/seed-sample-project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.1"
+  },
+  "dependencies": {
+    "seed-button": "^0.1.10",
+    "seed-harvester": "^0.1.3",
+    "seed-input": "0.0.3",
+    "seed-reset": "^0.1.1"
+  }
+}
