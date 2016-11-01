@@ -6,11 +6,16 @@ var gulp = require('gulp');
 var harvester = require('seed-harvester');
 var sass = require('gulp-sass');
 
-// Define gulp tasks
+// Build the CSS
 gulp.task('styles', function() {
+  // Automatically fetch the paths of seed packs
+  var paths = harvester(
+    // You can add your own paths here, example:
+    // '/app/src/scss/'
+  );
   return gulp.src('./scss/main.scss')
     .pipe(sass({
-      includePaths: harvester()
+      includePaths: paths
     }))
     .pipe(gulp.dest('./example'));
 });

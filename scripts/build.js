@@ -6,12 +6,16 @@ var mkdirp = require('mkdirp');
 var harvester = require('seed-harvester');
 var sass = require('node-sass');
 
-var includePaths = harvester();
+// Automatically fetch the paths of seed packs
+var paths = harvester(
+  // You can add your own paths here, example:
+  // '/app/src/scss/'
+);
 
 // Default .css compile
 sass.render({
   file: './scss/main.scss',
-  includePaths: includePaths
+  includePaths: paths
 }, function(error, result) {
   if (error) {
     console.error(error);
