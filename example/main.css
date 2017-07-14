@@ -401,20 +401,10 @@ input[type="search"] {
   vertical-align: middle;
   -webkit-user-select: none;
   user-select: none; }
-  button.c-button {
-    font-family: inherit;
-    overflow: visible;
-    outline: none; }
-    button.c-button::-moz-focus-inner {
-      border-style: none;
-      padding: 0; }
-    button.c-button:-moz-focus-ring {
-      outline: 1px dotted Buttontext; }
-    button.c-button:focus {
-      outline: none; }
   .c-button:hover {
     background-color: #f9f9f9;
     border-color: #ddd;
+    color: #2b2b2b;
     text-decoration: none; }
   .c-button:active {
     background-color: #f4f4f4;
@@ -437,13 +427,21 @@ input[type="search"] {
     cursor: not-allowed;
     opacity: 0.65; }
 
+.c-button.is-selected {
+  background-color: #f1f1f1; }
+  .c-button.is-selected:hover {
+    background-color: #ececec; }
+  .c-button.is-selected:active {
+    background-color: #e7e7e7; }
+
 .c-button.is-error {
   background-color: #e52f28;
   border-color: #cc1f19;
   color: #fff; }
   .c-button.is-error:hover {
     background-color: #de221b;
-    border-color: #cc1f19; }
+    border-color: #cc1f19;
+    color: #fff; }
   .c-button.is-error:active {
     background-color: #cc1f19;
     border-color: #cc1f19; }
@@ -460,7 +458,8 @@ input[type="search"] {
   color: #fff; }
   .c-button.is-success:hover {
     background-color: #3fba73;
-    border-color: #3aaa69; }
+    border-color: #3aaa69;
+    color: #fff; }
   .c-button.is-success:active {
     background-color: #3aaa69;
     border-color: #3aaa69; }
@@ -477,7 +476,8 @@ input[type="search"] {
   color: #fff; }
   .c-button.is-warning:hover {
     background-color: #ffc032;
-    border-color: #ffb91d; }
+    border-color: #ffb91d;
+    color: #fff; }
   .c-button.is-warning:active {
     background-color: #ffb91d;
     border-color: #ffb91d; }
@@ -537,7 +537,8 @@ input[type="search"] {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #3197D6; }
   .c-button--link:active {
     background-color: transparent;
     border-color: transparent;
@@ -627,6 +628,22 @@ input[type="search"] {
       background-color: transparent;
       border-color: transparent; }
 
+.c-button--block {
+  display: block;
+  width: 100%; }
+
+button.c-button {
+  font-family: inherit;
+  overflow: visible;
+  outline: none; }
+  button.c-button::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  button.c-button:-moz-focus-ring {
+    outline: 1px dotted Buttontext; }
+  button.c-button:focus {
+    outline: none; }
+
 .c-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -651,18 +668,6 @@ input[type="search"] {
   .c-input:focus {
     border-color: #3197D6;
     outline: none; }
-
-select.c-input {
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  appearance: menu; }
-
-textarea.c-input {
-  height: auto;
-  line-height: inherit;
-  overflow: auto;
-  padding: 8px;
-  vertical-align: top; }
 
 .c-input--sm {
   height: 28px;
@@ -711,6 +716,40 @@ textarea.c-input {
     border-color: #ffc646; }
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
+
+input[type="file"].c-input {
+  border-color: transparent;
+  cursor: pointer;
+  line-height: 0;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6px;
+  width: auto; }
+  input[type="file"].c-input--sm {
+    line-height: 0;
+    padding-bottom: 2px;
+    padding-top: 2px; }
+  input[type="file"].c-input--md {
+    line-height: 0;
+    padding-bottom: 6px;
+    padding-top: 6px; }
+  input[type="file"].c-input--lg {
+    line-height: 0;
+    padding-bottom: 14px;
+    padding-top: 14px; }
+
+select.c-input {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menu; }
+
+textarea.c-input {
+  height: auto;
+  line-height: inherit;
+  overflow: auto;
+  padding: 8px;
+  vertical-align: top; }
 
 html {
   background-color: #f9f9f9; }

@@ -18,15 +18,15 @@
   },
   "homepage": "https://github.com/helpscout/seed-sample-project#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.1"
+    "gulp": "3.9.1",
+    "gulp-sass": "3.1.0",
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.3"
   },
   "dependencies": {
-    "seed-button": "^0.1.10",
-    "seed-harvester": "^0.1.3",
-    "seed-input": "0.0.3",
-    "seed-reset": "^0.1.1"
+    "seed-button": "0.1.16",
+    "seed-harvester": "0.1.5",
+    "seed-input": "0.0.7",
+    "seed-reset": "0.1.4"
   }
 }
